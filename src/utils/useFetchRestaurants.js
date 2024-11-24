@@ -12,6 +12,8 @@ const useFetchRestaurants = () => {
         const json = await data.json();
         const restaurants =
           json?.data?.success?.cards[1]?.gridWidget?.gridElements?.infoWithStyle
+            ?.restaurants || json?.data?.success?.cards[2]?.gridWidget?.gridElements?.infoWithStyle
+            ?.restaurants|| json?.data?.success?.cards[3]?.gridWidget?.gridElements?.infoWithStyle
             ?.restaurants;
 
         setListOfRestaurants(restaurants || []);
