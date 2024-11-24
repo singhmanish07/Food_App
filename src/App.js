@@ -7,8 +7,8 @@ import Body from "./components/Body.js"; // Default import
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
 import About from "./components/About.js";
-import Contact from "./components/contact.js";
 import Error from "./components/Error.js";
+import Contact from "./components/Contact.js";
 import RestaurantMenu from "./components/RestaurantMenu.js";
 
 const Grocery = lazy(() => import("./components/Grocery"))
